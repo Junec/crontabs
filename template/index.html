@@ -1,0 +1,9 @@
+{#$var#}
+{#php#}echo 123;{#/php#}
+this is index html.
+
+{#php#}
+core::instance('header_widget')->display(array(
+	'var' => $var,
+));
+{#/php#}

@@ -15,7 +15,6 @@ $filter = array(
     'time|<=' => $tTime + 10
 );
 $crontabsList = $crontabsModel->getList($filter,'*',0,-1,"id ASC");
-print_r($crontabsList);
 if($crontabsList){
 	foreach($crontabsList as $job){
         $nextExecTime= $job['time']+$job['space']*60;

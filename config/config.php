@@ -2,7 +2,7 @@
 //...
 return array(
 	'app_dir' => '/sites/lnmp/code/crontabs',
-    'core_debug' => false,
+    'core_debug' => true,
 	'db_config' => array(
 		'server' => 'localhost',
 		'username' => 'root',

@@ -4,12 +4,32 @@
 <title></title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="renderer" content="webkit">
-<link rel="stylesheet" href="<?=core::getConfig('data_dir');?>/bootstrap/css/bootstrap.min.css">
-<script src="<?=core::getConfig('data_dir');?>/jquery.min.js"></script>
-
+<link rel="stylesheet" href="<?=core::getConfig('app_dir');?>/data/static/default/css/style.css">
+<script src="<?=core::getConfig('app_dir');?>/data/static/default/js/jquery-1.9.1.js"></script>
 </head>
 
 <body>
-22
+
+<table cellpadding="0" cellspacing="0" class="table-list" style='width:100%;'>
+<thead>
+<tr>
+<th>ID</th>
+<th>脚本名称</th>
+<th>状态</th>
+<th>下次运行时间</th>
+</tr>
+</thead>
+<tbody>
+{#foreach from=$data item=v#}
+<tr>
+<td>{#$v['id']#}</td>
+<td>{#$v['title']#}</td>
+<td>{#$v['status']#}</td>
+<td>{#$v['time']#}</td>
+</tr>
+{#/foreach#}
+</tbody>
+</table>
+
 </body>
 </html>

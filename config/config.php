@@ -1,8 +1,8 @@
 <?php
 //...
 return array(
-	'app_dir' => '/sites/lnmp/code/crontabs',
-    'core_debug' => true,
+	'app_dir' => '/crontabs',
+    'core_debug' => false,
 	'db_config' => array(
 		'server' => 'localhost',
 		'username' => 'root',
